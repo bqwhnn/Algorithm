@@ -8,3 +8,4 @@ Data Structure and Algorithm in Go
     * [选择排序](https://github.com/bqwhnn/algorithm/tree/master/sort/selection_sort)
     * [插入排序](https://github.com/bqwhnn/algorithm/tree/master/sort/insertion_sort)
     * [希尔排序](https://github.com/bqwhnn/algorithm/tree/master/sort/shell_sort)
+    * [归并排序](https://github.com/bqwhnn/algorithm/tree/master/sort/merge_sort)
