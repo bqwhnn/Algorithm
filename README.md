@@ -2,6 +2,13 @@
 Data Structure and Algorithm in Go
 
 * 数据结构
+  * 数组
+  * 栈
+  * 队列
+  * 链表
+  * 哈希表
+  * 二叉树
+  * 堆
 * 算法
   * 排序
     * [冒泡排序](https://github.com/bqwhnn/algorithm/tree/master/sort/bubble_sort)
