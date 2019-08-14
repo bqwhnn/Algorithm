@@ -62,3 +62,21 @@ func sort2(a []int, first, last int) {
 		sort2(a, i+1, last)
 	}
 }
+
+/*
+// Jon Bently beautiful code
+void quicksort(int l, int u){
+    int i, m;
+    if(l >= u) return;
+    m = l;
+    for(i = l+1; i<= u; i++)
+        if(x[i] < x[l]) // buggy!
+            swap(++m, i);
+
+    swap(l, m);
+
+    quicksort(l, m-1);
+    quicksort(m+1, u);
+
+}
+*/
