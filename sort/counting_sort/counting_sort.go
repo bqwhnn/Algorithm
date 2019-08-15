@@ -1,25 +1,36 @@
 package algorithm
 
-func countingSort(nums []int) {
-	len := len(nums)
-	min, max := nums[0], nums[0]
-	bucket := make(map[int]int)
+import (
+	"fmt"
+)
 
-	for i := 0; i < len; i++ {
-		bucket[nums[i]]++
-		if nums[i] < min {
-			min = nums[i]
-		}
-		if nums[i] > max {
-			max = nums[i]
+func countingSort(a []int) []int {
+	n := len(a)
+	k := a[0]
+
+	for i := 0; i < n; i++ {
+		if a[i] > k {
+			k = a[i]
 		}
 	}
 
-	k := 0
-	for i := min; i <= max; i++ {
-		for count := bucket[i]; count > 0; count-- {
-			nums[k] = i
-			k++
-		}
+	b := make([]int, k+1)
+	c := make([]int, n)
+	order := make([]int, n)
+	for i := 0; i < n; i++ {
+		b[a[i]]++
 	}
+
+	for i := 1; i <= k; i++ {
+		b[i] += b[i-1]
+	}
+
+	for i := n-1; i >= 0; i--{
+		c[b[a[i]]-1] = a[i]
+		order[b[a[i]]-1] = i	// order 记录了排序之前的位置，表明是稳定排序
+		b[a[i]]--
+	}
+
+	fmt.Println("counting sort order", order)
+	return c
 }
