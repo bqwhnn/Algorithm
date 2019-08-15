@@ -1,11 +1,13 @@
 package algorithm
 
-func quickSort(nums []int) {
+// QuickSort is quick sort by change
+func QuickSort(nums []int) {
 	len := len(nums)
 	sort1(nums, 0, len-1)
 }
 
-func quickSort2(nums []int) {
+// QuickSort2 is quick sort by fill
+func QuickSort2(nums []int) {
 	len := len(nums)
 	sort2(nums, 0, len-1)
 }

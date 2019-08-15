@@ -1,6 +1,7 @@
 package algorithm
 
-func bubbleSort(nums []int) {
+// BubbleSort is basic bubble sort
+func BubbleSort(nums []int) {
 	len := len(nums)
 	for i := 0; i < len; i++ {
 		for j := len - 1; j > i; j-- {
@@ -11,7 +12,8 @@ func bubbleSort(nums []int) {
 	}
 }
 
-func bubbleSort2(nums []int) {
+// BubbleSort2 is advanced bubble sort
+func BubbleSort2(nums []int) {
 	len := len(nums)
 
 	flag := 0

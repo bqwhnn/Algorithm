@@ -1,6 +1,7 @@
 package algorithm
 
-func mergeSort(nums []int) {
+// MergeSort is merge sort
+func MergeSort(nums []int) {
 	n := len(nums)
 	temp := make([]int, n)
 	sort(nums, temp, 0, n-1)

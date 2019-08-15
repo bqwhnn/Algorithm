@@ -1,6 +1,7 @@
 package algorithm
 
-func shellSort(nums []int) {
+// ShellSort is shell sort
+func ShellSort(nums []int) {
 	len := len(nums)
 	for gap := len / 2; gap > 0; gap /= 2 {
 		for i := gap; i < len; i++ {

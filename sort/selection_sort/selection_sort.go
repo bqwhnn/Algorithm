@@ -1,6 +1,7 @@
 package algorithm
 
-func selectionSort(nums []int) {
+// SelectionSort is selection sort
+func SelectionSort(nums []int) {
 	len := len(nums)
 	for i := 0; i < len; i++ {
 		minIndex := i

@@ -1,5 +1,6 @@
 package algorithm
 
-func heapSort(nums []int) {
+// HeapSort is heap sort
+func HeapSort(nums []int) {
 
 }

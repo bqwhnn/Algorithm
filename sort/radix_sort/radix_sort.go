@@ -1,5 +1,6 @@
 package algorithm
 
-func radixSort(nums []int) {
+// RadixSort is radix sort
+func RadixSort(nums []int) {
 
 }

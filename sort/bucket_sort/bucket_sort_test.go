@@ -9,6 +9,6 @@ func TestBucketSort(t *testing.T) {
 	nums := []int{}
 
 	fmt.Println("before bucket sort", nums)
-	bucketSort(nums)
+	BucketSort(nums)
 	fmt.Println("after bucket sort", nums)
 }

@@ -4,7 +4,8 @@ import (
 	"fmt"
 )
 
-func countingSort(a []int) []int {
+// CountingSort is counting sort
+func CountingSort(a []int) []int {
 	n := len(a)
 	k := a[0]
 

@@ -1,5 +1,8 @@
 package algorithm
 
-func bucketSort(nums []int) {
+import ()
+
+// BucketSort is bucket sort
+func BucketSort(nums []int) {
 
 }
