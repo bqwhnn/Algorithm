@@ -25,9 +25,9 @@ func countingSort(a []int) []int {
 		b[i] += b[i-1]
 	}
 
-	for i := n-1; i >= 0; i--{
+	for i := n - 1; i >= 0; i-- {
 		c[b[a[i]]-1] = a[i]
-		order[b[a[i]]-1] = i	// order 记录了排序之前的位置，表明是稳定排序
+		order[b[a[i]]-1] = i // order 记录了排序之前的位置，表明是稳定排序
 		b[a[i]]--
 	}
 
