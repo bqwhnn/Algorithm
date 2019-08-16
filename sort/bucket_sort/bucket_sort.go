@@ -20,12 +20,12 @@ func BucketSort(a []int) []int {
 		}
 	}
 
-	m := int(math.Ceil(float64(k)/bc))
+	m := int(math.Ceil(float64(k) / bc))
 	for i := 0; i < n; i++ {
 		bn := a[i] / m // 计算放在哪个桶
 		b := bucket[bn]
 		b = append(b, a[i])
-		for j := len(b)-1; j > 0 && b[j] < b[j-1]; j-- {
+		for j := len(b) - 1; j > 0 && b[j] < b[j-1]; j-- {
 			b[j], b[j-1] = b[j-1], b[j]
 		}
 		bucket[bn] = b

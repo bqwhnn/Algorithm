@@ -2,8 +2,8 @@ package algorithm
 
 import (
 	"fmt"
-	"testing"
 	"sort"
+	"testing"
 )
 
 func TestBucketSort(t *testing.T) {
