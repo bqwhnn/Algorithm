@@ -5,14 +5,14 @@ package stack
 // Stack Struct
 type Stack struct {
 	data []interface{}
-	top int
-} 
+	top  int
+}
 
 // NewStack is new stack
 func NewStack() Stack {
 	return Stack{
-		data : make([]interface{}, 0, 100),
-		top : -1,
+		data: make([]interface{}, 0, 100),
+		top:  -1,
 	}
 }
 
@@ -24,7 +24,7 @@ func (s *Stack) IsEmpty() bool {
 // Push op
 func (s *Stack) Push(x interface{}) {
 	s.top++
-	if s.top > len(s.data) - 1 {
+	if s.top > len(s.data)-1 {
 		s.data = append(s.data, x)
 	} else {
 		s.data[s.top] = x
