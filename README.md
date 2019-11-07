@@ -3,7 +3,7 @@ Data Structure and Algorithm in Go
 
 * 数据结构
   * 数组
-  * 栈
+  * [栈](https://github.com/bqwhnn/algorithm/tree/master/stack)
   * 队列
   * 链表
   * 哈希表
