@@ -21,4 +21,5 @@ Data Structure and Algorithm in Go
     * [计数排序](https://github.com/bqwhnn/algorithm/tree/master/sort/counting_sort)
     * [桶排序](https://github.com/bqwhnn/algorithm/tree/master/sort/bucket_sort)
     * [基数排序](https://github.com/bqwhnn/algorithm/tree/master/sort/radix_sort)
+  * [二分查找](https://github.com/bqwhnn/algorithm/tree/master/binary_search)
 
